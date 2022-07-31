@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomePage"
+    android:id="@+id/HM_Lay">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/light_blue"
+        app:flow_verticalBias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/HM_BlueLay">
+
+        <ImageView
+            android:id="@+id/Hm_Img"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:contentDescription="Profile Picture"
+            android:src="@mipmap/ic_user" />
+
+        <TextView
+            android:id="@+id/HM_Greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Hello, Dr DrName"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/HM_IdLay"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        app:layout_constraintTop_toBottomOf="@id/HM_BlueLay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="visible"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/HM_IDText"
+            android:gravity="center"
+            android:text="Patient: "
+            android:layout_marginStart="20dp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:id="@+id/HM_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toRightOf="@id/HM_IDText"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/HM_IDText"
+                app:layout_constraintBottom_toBottomOf="@id/HM_IDText"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+>
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:id="@+id/HM_RbName"
+                    android:checked="true"/>
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="ID"
+                    android:textColor="@color/black"
+                    android:id="@+id/HM_RBID" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add new"
+                    android:id="@+id/HM_addNew"/>
+            </RadioGroup>
+
+        <Spinner
+            android:id="@+id/HM_IdSpn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="#F0F0F0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/HM_RG" />
+        <TextView
+            android:id="@+id/HM_txtPat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Details about Patient"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/HM_IdSpn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/Blue"
+            android:textSize="15dp"
+            android:textStyle="italic"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+        android:id="@+id/HM_BrText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breathing Pattern:"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HM_IdLay"/>
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/HM_Grph"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HM_BrText"
+        android:background="@color/gray_background"
+        />
+    <TextView
+        android:id="@+id/HM_TyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breathing Type:"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HM_Grph"
+        />
+    <TextView
+        android:id="@+id/HM_Typ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="16dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toRightOf="@+id/HM_TyText"
+        app:layout_constraintTop_toTopOf="@+id/HM_TyText"
+        app:layout_constraintBottom_toBottomOf="@+id/HM_TyText"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="@color/Red"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Call Dr"
+            android:id="@+id/fab"/>
+    <ProgressBar
+        android:id="@+id/HM_PgBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

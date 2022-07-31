@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/light_blue">
+
+
+
+    <RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="AppIcon"
+
+        android:src="@mipmap/ic_icon" />
+
+
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:layout_alignTop="@id/icon"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:autofillHints="emailAddress"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPass"
+        android:layout_alignTop="@id/icon"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints="password"/>
+
+    <Button
+        android:id="@+id/btnSign"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="350dp"
+        android:text="Sign In" />
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="350dp"
+            android:layout_alignBottom="@id/btnSign"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/MP_frgt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="410dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Forget Password"
+            android:textColor="@color/purple_500"
+            android:textSize="18dp" />
+
+        <ProgressBar
+            android:id="@+id/MP_pgBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginBottom="160dp"
+            android:visibility="gone" />
+</RelativeLayout>
+
+
+
+</RelativeLayout>

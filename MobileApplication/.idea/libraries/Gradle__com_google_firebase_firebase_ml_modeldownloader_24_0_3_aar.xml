@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-ml-modeldownloader:24.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/de2f20afae04d2e10b9416748923d371/transformed/jetified-firebase-ml-modeldownloader-24.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/de2f20afae04d2e10b9416748923d371/transformed/jetified-firebase-ml-modeldownloader-24.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/de2f20afae04d2e10b9416748923d371/transformed/jetified-firebase-ml-modeldownloader-24.0.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-ml-modeldownloader/24.0.3/9b7929d974061db489bb77ae9b767a0795ea1f09/firebase-ml-modeldownloader-24.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

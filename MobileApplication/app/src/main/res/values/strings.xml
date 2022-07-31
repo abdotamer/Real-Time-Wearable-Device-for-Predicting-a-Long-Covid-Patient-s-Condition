@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BreathingClassifer</string>
+    <string name="db_user">Users</string>
+</resources>

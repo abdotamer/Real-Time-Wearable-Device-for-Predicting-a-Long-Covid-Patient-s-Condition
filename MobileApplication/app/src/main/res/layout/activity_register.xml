@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:background="@color/light_blue"
+        app:flow_verticalBias="0.0"
+        app:layout_constraintBottom_toTopOf="@id/btnReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_user"
+        app:layout_constraintBottom_toBottomOf="@id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:clickable="false"
+        android:text="Details"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+    <TextView
+        android:id="@+id/Bday"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Birth Day"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/Name" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Phone Number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/Bday" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/Type" />
+    <TextView
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/Email"/>
+    <TextView
+        android:id="@+id/rePass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Re-Password"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/Pass"/>
+    <TextView
+        android:id="@+id/Type"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Type"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/Phone" />
+
+    <TextView
+        android:id="@+id/InCaseOfEmergency"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="In Case Of\nEmergency"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toTopOf="@id/guideline3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EmrgName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/InCaseOfEmergency" />
+
+    <TextView
+        android:id="@+id/Relation"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Relation"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/EmrgName" />
+
+    <TextView
+        android:id="@+id/EmrgPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Phone"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/Relation" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="#F0F0F0"
+        android:hint="Name"
+        android:autofillHints="name"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:textSize="10pt"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@id/Name"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/txtBday"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="#F0F0F0"
+        android:hint="Birth Day"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:editable="false"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:textSize="10pt"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@id/Bday"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Bday" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="#F0F0F0"
+        android:hint="Phone Number"
+        android:autofillHints="phone"
+        android:inputType="phone"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:maxLines="1"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@+id/Phone"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Phone" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:maxLines="1"
+        android:background="#F0F0F0"
+        android:hint="Email"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@id/Email"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Email" />
+
+    <RadioGroup
+        android:id="@+id/rdType"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/Type"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Type"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Doctor"
+            android:textColor="@color/black"
+            android:id="@+id/Doc"/>
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Patient"
+            android:textColor="@color/black"
+            android:id="@+id/Pat"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="#F0F0F0"
+        android:hint="Password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@+id/Pass"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Pass"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/txtrePass"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="#F0F0F0"
+        android:maxLines="1"
+        android:importantForAutofill="no"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@+id/rePass"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rePass" />
+
+    <EditText
+        android:id="@+id/txtEmrgName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:layout_marginHorizontal="10dp"
+        android:background="#F0F0F0"
+        android:hint="Name"
+        android:autofillHints="new name"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@id/EmrgName"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/EmrgName"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/txtRelation"
+        android:layout_width="0dp"
+        android:maxLines="1"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="#F0F0F0"
+        android:hint="Relation    "
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@id/Relation"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Relation"/>
+
+    <EditText
+        android:id="@+id/txtEmrgPhone"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:maxLines="1"
+        android:background="#F0F0F0"
+        android:hint="Phone"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#787878"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@id/EmrgPhone"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/EmrgPhone" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="160dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="300dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="114dp" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:text="Register"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pgBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

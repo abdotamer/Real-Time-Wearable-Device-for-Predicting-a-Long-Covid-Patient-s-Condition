@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "212495536430",
+    "firebase_url": "https://breathingclassifier-default-rtdb.firebaseio.com",
+    "project_id": "breathingclassifier",
+    "storage_bucket": "breathingclassifier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212495536430:android:2963a5ada1f056e8d7aabf",
+        "android_client_info": {
+          "package_name": "com.example.breathingclassifer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212495536430-rt1lqjma2rbhr48m8m76vpbhnuq3ksai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq982S-B1Uho5ihQxzdB445DD_gGrwx9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212495536430-rt1lqjma2rbhr48m8m76vpbhnuq3ksai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
